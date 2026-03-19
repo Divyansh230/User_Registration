@@ -16,3 +16,10 @@ def validate_email(email):
 def validate_phone(phone):
     pattern=r'^\d{2} \d{10}$'
     return bool(re.match(pattern,phone))
+
+
+def validate_password(password):
+    if len(password)<8:
+        print('Paswword Length should be greater than 8')
+        return False
+    
