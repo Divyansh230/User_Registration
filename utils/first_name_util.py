@@ -1,5 +1,5 @@
 import re
 
-def first_name_utils(name):
+def validate_first_name(name):
     pattern=r'^[A-Z][a-zA-Z]{2,}$'
     return bool(re.match(pattern,name))
