@@ -23,3 +23,6 @@ def validate_password(password):
         print('Paswword Length should be greater than 8')
         return False
     
+    if not re.search(r'[A-Z]',password):
+        return False
+    
