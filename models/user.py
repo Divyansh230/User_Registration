@@ -6,3 +6,6 @@ class User:
         self.email=email
         self.phone_number=phone_number
         self.password=password
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
