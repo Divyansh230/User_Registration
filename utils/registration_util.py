@@ -26,3 +26,6 @@ def validate_password(password):
     if not re.search(r'[A-Z]',password):
         return False
     
+    if not re.search(r'[0-9]',password):
+        return False
+    
