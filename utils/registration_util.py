@@ -11,3 +11,8 @@ def validate_last_name(last_name):
 def validate_email(email):
     pattern = r'^[a-z]+([._+-]*[a-z0-9]+)*@[a-z0-9]+\.[a-z]{2,}(\.[a-z]{2,})?$'
     return bool(re.match(pattern,email))
+
+
+def validate_phone(phone):
+    pattern=r'^\d{2} \d{10}$'
+    return bool(re.match(pattern,phone))
